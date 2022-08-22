@@ -46,7 +46,7 @@ languageTagalog.onclick=()=>{
         if(typeBooksValue==libro66[nextBook]){
             console.log('pray')
             nextBook += 1
-            scores+= 66
+            scores+= 1
             typeBooks.value='';
             scoreoutput.innerText=scores
         }if(scores==67){
