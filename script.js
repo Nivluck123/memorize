@@ -13,6 +13,9 @@ typeBooks.onkeyup=()=>{
         typeBooks.value='';
         scoreoutput.innerText=scores
     }
+    if(scores==67){
+            complete.textContent='comlete'
+        }
 }
 
 languageEnglish.onclick=()=>{
@@ -30,6 +33,9 @@ typeBooks.onkeyup=()=>{
         typeBooks.value='';
         scoreoutput.innerText=scores
     }
+    if(scores==67){
+            complete.textContent='comlete'
+        }
 }
 }
 
