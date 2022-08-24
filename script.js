@@ -1,5 +1,6 @@
 // input js
-let containerForRandom =[]
+let containerForRandomTagalog =[]
+let containerForRandomEnglish =[]
 let books66 = ['Genesis','Exodus','Leviticus','Numbers','Deuteronomy','Joshua','Judges','Ruth','1samuel','2samuel','1kings','2kings','1chronicles','2chronicles','Ezra','Nehemiah','Esther','Job','Psalms','Proverbs','Ecclesiastes','Songofsongs','Isaiah','Jeremiah','Lamentations','Ezekiel','Daniel','Hosea','Joel','Amos','Obadiah','Jonah','Micah','Nahum','Habakkuk','Zephaniah','Haggai','Zechariah','Malachi','Matthew','Mark','Luke','John','Acts','Romans','1corinthians','2corinthians','Galatians','Ephesians','Philippians','Colossians','1thessalonians','2thessalonians','1timothy','2timothy','Titus','Philemon','Hebrews','James','1peter','2peter','1john','2john','3john','Jude','Revelation']
 let showComplete=['Genesis','Exodus','Leviticus','Numbers','Deuteronomy','Joshua','Judges','Ruth','1 Samuel','2 Samuel','1 Kings','2 Kings','1 Chronicles','2 Chronicles','Ezra','Nehemiah','Esther','Job','Psalms','Proverbs','Ecclesiastes','Song of Songs','Isaiah','Jeremiah','Lamentations','Ezekiel','Daniel','Hosea','Joel','Amos','Obadiah','Jonah','Micah','Nahum','Habakkuk','Zephaniah','Haggai','Zechariah','Malachi','Matthew','Mark','Luke','John','Acts','Romans','1 Corinthians','2 Corinthians','Galatians','Ephesians','Philippians','Colossians','1 Thessalonians','2 Thessalonians','1 Timothy','2 Timothy','Titus','Philemon','Hebrews','James','1 Peter','2 Peter','1 John','2 John','3 John','Jude','Revelation']
 let nextBook =0
@@ -104,12 +105,12 @@ randomBook.onclick=()=>{
         let index1 =EnglishBook.indexOf(typeBooksValue1)
         EnglishBook.forEach(element => {
             if(typeBooksValue1==element){
-                if(containerForRandom.includes(typeBooksValue1)===false){
+                if(containerForRandomEnglish.includes(typeBooksValue1)===false){
                 englishScore+=1
                 complete.textContent=showComplete[EnglishBook.indexOf(typeBooksValue1)]
                 typeBooks.value=''
                 showEnglishScore.textContent = englishScore
-                containerForRandom.push(typeBooksValue1)
+                containerForRandomEnglish.push(typeBooksValue1)
                 }else{
                     complete.textContent= showComplete[index1] + ' is typed'
                 }
@@ -124,11 +125,11 @@ randomBook.onclick=()=>{
            
             if(typeBooksValue1==element){  
                 
-                if(containerForRandom.includes(typeBooksValue1)===false){
+                if(containerForRandomTagalog.includes(typeBooksValue1)===false){
                     typeBooks.value=''
-                    containerForRandom.push(typeBooksValue1)
-                    console.log(containerForRandom)
-                    tagalogScore +=1
+                    containerForRandomTagalog.push(typeBooksValue1)
+                    tagalogScore+=1
+
                     showTagalogScore.textContent=tagalogScore
                     complete.textContent=showComplete1[index]
                 }else{
@@ -139,3 +140,4 @@ randomBook.onclick=()=>{
     }
     
 }
+
