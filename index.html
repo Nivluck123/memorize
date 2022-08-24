@@ -11,19 +11,29 @@
 <body>
     <div class="wrapper">
         <div class="test-sheet-container">
-            <p class="header1" id="header1">(English version)</p><p class="text-decoration"> capital letter</p>
-        <h1>66 book in order</h1>
+            <p class="header1" id="header1">(66 Books English version)</p>
+        <h1>in order</h1>
         
         <div class="input-field">
             <input type="text" id="typeBooks" class="type-input-books" placeholder="Enter book"><span id="scoreoutput">0</span>
+            <div class="show-english-tagalog-score">
+                <p class="show" >english: <span id="showEnglishScore">0</span></p>
+                <p class="show" >tagalog: <span id="showTagalogScore">0</span></p>
+            </div>
+            
         </div>
         <div class="book-language-section">
             <h2 id="complete">you type </h2>
             <button class="language-english language-button" id="languageEnglish">English</button>
             <button class="language-tagalog language-button" id="languageTagalog">Tagalog</button>
+            <button id="randomBook" >random</button>
         </div>
-       
+       <footer>
+           <p class="warning">warning: clicking to any button will reset your work except random</p>
+           
+       </footer>
     </div>
+    
     </div>
     
 
