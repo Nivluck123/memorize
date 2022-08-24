@@ -94,7 +94,7 @@ let showET = document.querySelector('.show-english-tagalog-score')
     let englishScore=0
     let tagalogScore=0
 randomBook.onclick=()=>{
-    
+    orderRandom.textContent='random'
     scoreoutput.style.display='none'
     showET.style.display='block'
     typeBooks.onkeyup=()=>{
